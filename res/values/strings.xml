@@ -135,6 +135,9 @@
     <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radioInfo_data_suspended">Suspended</string>
 
+    <!-- OneOS Version -->
+    <string name="oneos_version">OneOS Version</string>
+
     <!-- Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radioInfo_unknown">Unknown</string>
     <!-- Phone Info screen. Units shown after a value.  Used for diagnostic info screens, precise translation isn't needed -->
