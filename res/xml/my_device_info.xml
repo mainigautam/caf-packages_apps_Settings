@@ -118,7 +118,8 @@
         android:order="33"
         android:title="@string/oneos_version"
         android:summary="@string/summary_placeholder"
-       
+        settings:allowDividerAbove="true" />
+
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
