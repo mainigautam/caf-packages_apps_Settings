@@ -17,12 +17,13 @@
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
+import android.os.Build;
+import android.text.BidiFormatter;
 
 import com.android.settings.core.BasePreferenceController;
+import com.android.settings.deviceinfo.VersionUtils;
 
-import com.android.settings.deviceinfo.BuildNumberPreferenceController;
-
-public class SimpleBuildNumberPreferenceController extends BuildNumberPreferenceController {
+public class SimpleBuildNumberPreferenceController extends BasePreferenceController {
 
     public SimpleBuildNumberPreferenceController(Context context,
             String preferenceKey) {
@@ -35,21 +36,14 @@ public class SimpleBuildNumberPreferenceController extends BuildNumberPreference
     }
 
     @Override
-    public boolean isSliceable() {
-        return false;
-    }
-
-    @Override
-    public boolean isCopyableSlice() {
-        return false;
-    }
-
-    @Override
-    public boolean useDynamicSliceSummary() {
-        return false;
-    }
-
-    @Override
-    public void copy() {
+    public CharSequence getSummary() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+        String pixelExperienceVersion = VersionUtils.getPixelExperienceVersion();
+        if (!pixelExperienceVersion.equals("")){
+            sb.append("\n");
+            sb.append(pixelExperienceVersion);
+        }
+        return sb.toString();
     }
 }
