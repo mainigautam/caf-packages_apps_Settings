@@ -3328,8 +3328,8 @@
          <!-- OneCustoms -->
         <activity android:name=".Settings$OneCustomsActivity"
             android:label="@string/one_settings_title"
-            android:icon="@drawable/ic_settings_one"
-            android:taskAffinity="">
+            android:icon="@drawable/ic_homepage_one"
+            android:taskAffinity="com.android.settings">
             <intent-filter android:priority="1">
                 <action android:name="com.teamone.OneCustoms.OneSettings" />
                 <category android:name="android.intent.category.DEFAULT" />
