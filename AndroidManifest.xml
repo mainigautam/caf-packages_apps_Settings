@@ -3329,7 +3329,9 @@
         <activity android:name=".Settings$OneCustomsActivity"
             android:label="@string/one_settings_title"
             android:icon="@drawable/ic_homepage_one"
-                <action android:name="android.intent.action.MAIN" />
+	    android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="69">
+	        <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
