@@ -32,7 +32,7 @@
 
     <!-- OneCustoms -->
     <string name="one_settings_title">Advanced Features</string>
-    <string name="one_settings_summary">Customize your Model&#58; %1$s</string>
+    <string name="one_settings_summary">Under Testing</string>
     <string name="dashboard_conditions_title">Dashboard conditions</string>
     <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
     <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
