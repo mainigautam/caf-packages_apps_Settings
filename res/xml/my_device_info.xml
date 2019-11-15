@@ -124,6 +124,15 @@
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
+   <!-- OneOS version -->
+    <Preference
+        android:key="one_version"
+        android:order="43"
+        android:title="@string/one_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.oneversion.OneVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.oneversion.OirmwareVersionPreferenceController"/>
+
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
